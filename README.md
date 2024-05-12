@@ -8,7 +8,7 @@ c) la vedad que no paso nada, al ejecutarlo con o sin comentarios el tiempo esta
 
 ![tp 3 arctq](https://github.com/imanolmirantborde/ASO2024TPs/assets/166465473/bfa59113-160c-4805-bc0b-dedd3ecb401d)
 
-'''
+```
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -64,4 +64,4 @@ int main(int argc, char *argv[])
 	}
 	pthread_exit(NULL);
 }
-'''
+```
