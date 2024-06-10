@@ -6,7 +6,8 @@ B) no
 
 c) la vedad que no paso nada, al ejecutarlo con o sin comentarios el tiempo esta entre los 0.00900 y los 0.00600 segundos
 
-![tp 3 arctq](https://github.com/imanolmirantborde/ASO2024TPs/assets/166465473/bfa59113-160c-4805-bc0b-dedd3ecb401d)
+![Captura de pantalla 2024-06-10 160523](https://github.com/imanolmirantborde/ASO2024TPs/assets/166465473/262ceee9-4c4c-477d-b901-c48020563da0)
+
 
 ```
 #include <pthread.h>
