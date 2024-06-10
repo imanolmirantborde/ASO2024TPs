@@ -4,7 +4,8 @@ respuestas tp 3 arqi
 
 B) no
 
-c) la vedad que no paso nada, al ejecutarlo con o sin comentarios el tiempo esta entre los 0.00900 y los 0.00600 segundos
+c) por el race condition el resultado puede ser distinto. esto es por utilisar hilos compartidos. cuando se le saca los comentarios,
+uno de los hilos entra en el bucle y luego el otro. devido a esto los resultados dadso a mi me dan entre los segundos 0.00900 y los segundos 0.00600 segundos
 
 ![Captura de pantalla 2024-06-10 160523](https://github.com/imanolmirantborde/ASO2024TPs/assets/166465473/262ceee9-4c4c-477d-b901-c48020563da0)
 
