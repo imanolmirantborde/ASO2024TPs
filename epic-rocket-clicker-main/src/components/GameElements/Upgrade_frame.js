@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {useState, useEffect} from "react";
 import './gameElements.css';
 
-function Booster(props)
+function Uprgade(props)
 {
   const [btncls, setBtncls] = useState('btn btn-secondary');
   const [txt, setTxt] = useState('Kup');
@@ -67,16 +67,13 @@ function Booster(props)
           
            <div className="CardGrid"> 
            <div> 
-            <b> Owned:</b> {props.amount} <br/>
-            <b> Cost:</b> <span className={colortxt}> {ItemCost} <br/> </span>
-            <b> Demand:</b> {props.pwr}
+            <b> Cantidad:</b> {props.amount} <br/>
+            <b> Coste:</b> <span className={colortxt}> {ItemCost} <br/> </span>
+            <b> Demanda:</b> {props.pwr}
             </div>
             <div>
              <b> Stock usage: </b>  {props.StockUsage} <br/>
-             <b>Min capacity: </b> <span className={colortxt2}> {props.minStock}L </span>
-              
-
-
+             <b>Min capacity: </b> <span className={colortxt2}> {props.minStock} </span>
             </div>
             </div>
          
@@ -90,4 +87,4 @@ function Booster(props)
 
 
 
-export default Booster;
+export default Uprgade;

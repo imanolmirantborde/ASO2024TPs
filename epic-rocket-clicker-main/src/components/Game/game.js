@@ -2,7 +2,7 @@ import { click } from "@testing-library/user-event/dist/click";
 import React, { Component, useState } from "react";
 import { ReactDOM } from "react";
 import DisplayBoard from "../GameElements/displayClicks";
-import Booster from "../GameElements/booster_frame";
+import Upgrade from "../GameElements/Upgrade_frame";
 import { useEffect } from "react";
 import { notify, green_notify } from "../Alerts/toast";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -47,7 +47,7 @@ import Casino from "../ModalComponents/Casino";
             
             item_price: [100, 300, 600, 800, 950, 1900, 2800, 5000, 10000000],
 
-            item_name: ["🚀booster1", "🚀booster2", "🚀booster3"],
+            item_name: ["Tapita", "Dulce de leche", "Coco rallado"],
 
             item_amount: [0, 0 ,0, 0, 0 ,0, 0, 0, 0],
 
@@ -67,7 +67,7 @@ import Casino from "../ModalComponents/Casino";
         };
         this.AddPoints = this.AddPoints.bind(this);
         this.ChangePoints = this.ChangePoints.bind(this);
-        this.BuyBooster = this.BuyBooster.bind(this);
+        this.BuyUpgrade = this.BuyUpgrade.bind(this);
         this.lvlSystem = this.lvlSystem.bind(this);
         this.SubstractStock = this.SubstractStock.bind(this);
         this.getRandomInt = this.getRandomInt.bind(this);
@@ -118,13 +118,13 @@ import Casino from "../ModalComponents/Casino";
             if(z <= 33)
             {
                 this.ChangePoints(-winval);
-                /* WYGRANA */
+                
 
                 notify("You win. Your award: " + winval);
             }
             else {
                 notify("You lose... Try again :-D");
-                /*PRZEGRANA */
+               
             }
         }
 
@@ -133,13 +133,13 @@ import Casino from "../ModalComponents/Casino";
             if(z <= 20)
             {
                 this.ChangePoints(-winval);
-                /* WYGRANA */
+            
 
                 notify("You win. Your award: " + winval);
             }
             else {
                 notify("You lose... Try again :-D");
-                /*PRZEGRANA */
+               
             }
         }
 
@@ -148,15 +148,13 @@ import Casino from "../ModalComponents/Casino";
             if(z <= 10)
             {
                 this.ChangePoints(-winval);
-                
-                /* WYGRANA */
+
 
                 notify("You win. Your award: " + winval);
             }
             else {
                 notify("You lose... Try again :-D");
                
-                /*PRZEGRANA */
             }
         }
 
@@ -266,7 +264,7 @@ import Casino from "../ModalComponents/Casino";
 
             }
              else {
-              notify("⛽You can't buy more Stock....")
+              notify("You can't buy more Stock....")
             }
         }
 
@@ -345,7 +343,7 @@ import Casino from "../ModalComponents/Casino";
                
     }
 
-    BuyBooster(y) 
+    BuyUpgrade(y) 
     {
         let CheckStockMax = this.state.StockMax;
         let price = this.state.item_price[y];
