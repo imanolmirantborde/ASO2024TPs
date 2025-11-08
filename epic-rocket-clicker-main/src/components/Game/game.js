@@ -337,7 +337,7 @@ import Casino from "../ModalComponents/Casino";
 
         }
         else {
-            notify("⛽You don't have Stock!");
+            notify("You don't have Stock!");
         }
      
                
