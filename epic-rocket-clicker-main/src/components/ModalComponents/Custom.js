@@ -33,7 +33,7 @@ function Custom(props)
 
     return(
         <div> 
-        <button className="btn btn-secondary btn-lg" onClick={TriggerBtn}>Rocket Tuning </button>
+        <button className="btn btn-secondary btn-lg" onClick={TriggerBtn}>Stock Tuning </button>
        <div id="custom" className="modal">
            <div className="modal-content">
 
@@ -47,9 +47,9 @@ function Custom(props)
       
 
         <h1>BUY STOCK CAPACITY:</h1>
-       <div className="customCapacityTxt"> +50L  <button className="btn btn-danger customCapacityBtn" onClick={props.btn1}>BUY</button><h4>Price: {props.price * 50} </h4></div> 
-       <div className="customCapacityTxt"> +100L  <button className="btn btn-danger customCapacityBtn" onClick={props.btn2}>BUY</button><h4>Price: {props.price * 100} </h4></div> 
-       <div className="customCapacityTxt"> +500L  <button className="btn btn-danger customCapacityBtn" onClick={props.btn3}>BUY</button><h4>Price: {props.price * 500} </h4></div> 
+       <div className="customCapacityTxt"> +50  <button className="btn btn-danger customCapacityBtn" onClick={props.btn1}>BUY</button><h4>Price: {props.price * 50} </h4></div> 
+       <div className="customCapacityTxt"> +100  <button className="btn btn-danger customCapacityBtn" onClick={props.btn2}>BUY</button><h4>Price: {props.price * 100} </h4></div> 
+       <div className="customCapacityTxt"> +500  <button className="btn btn-danger customCapacityBtn" onClick={props.btn3}>BUY</button><h4>Price: {props.price * 500} </h4></div> 
 
          </div>
 
