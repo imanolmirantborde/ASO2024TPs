@@ -1,12 +1,13 @@
 import React from "react";
 
 const images = {
-    rocket1: require('./tapita.png'),
-    rocket2: require('./dulce.png'),
-    rocket3: require('./cocoRallado.png'),
+    upgrade1: require('./tapita.png'),
+    upgrade2: require('./dulce.png'),
+    upgrade3: require('./cocoRallado.png'),
+    alfajorSimple: require('./alfajorSimple.png'),
 
 
-    avatar1: require('./avatars/alfajorLogo.png'),
+    avatar1: require('./alfajorLogo.png'),
 
 
 }

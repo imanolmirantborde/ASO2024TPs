@@ -5,6 +5,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import alfajorSimple from '../Images/alfajorSimple.png';
+
+
 
 function DisplayBoard(props)
 {  
@@ -18,7 +21,7 @@ function DisplayBoard(props)
          <Row>
 
         <Col>
-        <img className="avatar" src={props.avatar} />
+        <img className="avatar" src={props.avatar}  />
         </Col> 
 
         <Col> 
@@ -34,7 +37,7 @@ function DisplayBoard(props)
         </Row>
         </div>
         <h4>Demand: {props.Demand}</h4>
-        <button className="btn btn-primary btn-lg cbtn" onClick={props.event}><img src="../Images/alfajorSimple.png" alt="Alfajor Simple"/></button>
+        <button className="btn btn-primary btn-lg cbtn" onClick={props.event}><img src={alfajorSimple} alt="Alfajor Simple" style={{ width: '50px', height: '50px', marginRight: '20px' }} />vender</button>
         </Container>
         </div>
     )
