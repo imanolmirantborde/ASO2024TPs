@@ -35,7 +35,7 @@ function Stockstation(props)
 
     return(
         <div> 
-        <button className="btn btn-secondary btn-lg" onClick={TriggerBtn}>⛽Petrol Station!</button>
+        <button className="btn btn-secondary btn-lg" onClick={TriggerBtn}>Stock Station!</button>
        <div id="modDiv" className="modal">
            <div className="modal-content">
 
@@ -46,17 +46,17 @@ function Stockstation(props)
 
 
          <div className="ModalTxt">
-         <h1>Petrol Station</h1>
-         <h2>Tank level:</h2>
+         <h1>ReStock Station</h1>
+         <h2>Stock level:</h2>
          <h3 className="StockTextInfo">{props.tanklevel}%</h3>
-         <h2>1L Stock price: </h2> <h3 className="StockTextInfo">{props.price} clicks</h3>
+         <h2>1 Stock price: </h2> <h3 className="StockTextInfo">{props.price} clicks</h3>
       
          <Container> 
          <br/> <br/>
          <Row>
-         <Col> <button className="btn btn-primary" onClick={props.Btn1}><h1>⛽ReStock 1L</h1></button></Col> 
-         <Col> <button className="btn btn-primary" onClick={props.Btn2}><h1>⛽ReStock 10L</h1></button></Col> 
-         <Col> <button className="btn btn-primary" onClick={props.Btn3}> <h1>⛽ReStock MAX</h1></button></Col> 
+         <Col> <button className="btn btn-primary" onClick={props.Btn1}><h1>ReStock 1</h1></button></Col> 
+         <Col> <button className="btn btn-primary" onClick={props.Btn2}><h1>ReStock 10</h1></button></Col> 
+         <Col> <button className="btn btn-primary" onClick={props.Btn3}> <h1>ReStock MAX</h1></button></Col> 
          </Row>
         
          </Container>
