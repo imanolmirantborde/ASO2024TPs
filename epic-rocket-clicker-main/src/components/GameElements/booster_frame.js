@@ -15,7 +15,7 @@ function Booster(props)
   
 
   useEffect(()=>{
-    if(props.click >= props.cost && props.minFuel <= props.fmax)
+    if(props.click >= props.cost && props.minStock <= props.fmax)
     {
       setBtncls('btn btn-success');
       setTxt('BUY');
@@ -30,7 +30,7 @@ function Booster(props)
     }
 
 
-    if(props.minFuel <= props.fmax)
+    if(props.minStock <= props.fmax)
     {
       setColortxt2('txtGreen');
       
@@ -69,11 +69,11 @@ function Booster(props)
            <div> 
             <b> Owned:</b> {props.amount} <br/>
             <b> Cost:</b> <span className={colortxt}> {ItemCost} <br/> </span>
-            <b> Power:</b> {props.pwr}
+            <b> Demand:</b> {props.pwr}
             </div>
             <div>
-             <b> Fuel usage: </b>  {props.fuelUsage} <br/>
-             <b>Min capacity: </b> <span className={colortxt2}> {props.minFuel}L </span>
+             <b> Stock usage: </b>  {props.StockUsage} <br/>
+             <b>Min capacity: </b> <span className={colortxt2}> {props.minStock}L </span>
               
 
 

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import './modalTemplate.css';
 import {Container, Row, Col,} from "react-bootstrap";
 import {Carousel} from "react-bootstrap";
-function Fuelstation(props)
+function Stockstation(props)
 {
     const [show, SetShow]  = useState(false);
     const TriggerBtn = () =>
@@ -48,15 +48,15 @@ function Fuelstation(props)
          <div className="ModalTxt">
          <h1>Petrol Station</h1>
          <h2>Tank level:</h2>
-         <h3 className="FuelTextInfo">{props.tanklevel}%</h3>
-         <h2>1L Fuel price: </h2> <h3 className="FuelTextInfo">{props.price} clicks</h3>
+         <h3 className="StockTextInfo">{props.tanklevel}%</h3>
+         <h2>1L Stock price: </h2> <h3 className="StockTextInfo">{props.price} clicks</h3>
       
          <Container> 
          <br/> <br/>
          <Row>
-         <Col> <button className="btn btn-primary" onClick={props.Btn1}><h1>⛽Refuel 1L</h1></button></Col> 
-         <Col> <button className="btn btn-primary" onClick={props.Btn2}><h1>⛽Refuel 10L</h1></button></Col> 
-         <Col> <button className="btn btn-primary" onClick={props.Btn3}> <h1>⛽Refuel MAX</h1></button></Col> 
+         <Col> <button className="btn btn-primary" onClick={props.Btn1}><h1>⛽ReStock 1L</h1></button></Col> 
+         <Col> <button className="btn btn-primary" onClick={props.Btn2}><h1>⛽ReStock 10L</h1></button></Col> 
+         <Col> <button className="btn btn-primary" onClick={props.Btn3}> <h1>⛽ReStock MAX</h1></button></Col> 
          </Row>
         
          </Container>
@@ -74,4 +74,4 @@ function Fuelstation(props)
         </div>
     )
 }
-export default Fuelstation;
+export default Stockstation;

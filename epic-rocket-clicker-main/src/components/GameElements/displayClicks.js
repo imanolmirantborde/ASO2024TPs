@@ -33,7 +33,7 @@ function DisplayBoard(props)
         </Col>
         </Row>
         </div>
-        <h4>POWER: {props.power}</h4>
+        <h4>Demand: {props.Demand}</h4>
         <button className="btn btn-primary btn-lg cbtn" onClick={props.event}>🚀</button>
         </Container>
         </div>

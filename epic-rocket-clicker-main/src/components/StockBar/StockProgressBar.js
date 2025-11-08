@@ -43,7 +43,7 @@ const ProgressBar = (props)=> {
         textShadow: '2px 2px black'
     }
 
-      const FuelBG = {
+      const StockBG = {
           backgroundColor: '#181818',
           width: '1250px',
           borderRadius: '3%',
@@ -51,16 +51,16 @@ const ProgressBar = (props)=> {
       }
 
       return (
-          <div style={FuelBG}> 
+          <div style={StockBG}> 
           
-          <div style={txt}>⛽FUEL </div>
+          <div style={txt}>Stock </div>
         <div style={containerStyles}>
           <div style={fillerStyles}>
             <span style={labelStyles}>{`${completed}%`}</span>
           </div>
         </div>
-        <div style={txt}> <h2>Tank capacity: {props.FuelMax}L</h2></div>
-        <div style={txt2}> <p>Fuel consumption: {props.fuelUsage}L/click</p></div>
+        <div style={txt}> <h2>Stok capacity: {props.StockMax}</h2></div>
+        <div style={txt2}> <p>Stock consumption: {props.StockUsage}/click</p></div>
         </div>
       );
 }
