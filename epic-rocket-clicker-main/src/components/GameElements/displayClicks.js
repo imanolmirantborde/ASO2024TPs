@@ -34,7 +34,7 @@ function DisplayBoard(props)
         </Row>
         </div>
         <h4>Demand: {props.Demand}</h4>
-        <button className="btn btn-primary btn-lg cbtn" onClick={props.event}>🚀</button>
+        <button className="btn btn-primary btn-lg cbtn" onClick={props.event}><img src="../Images/alfajorSimple.png" alt="Alfajor Simple"/></button>
         </Container>
         </div>
     )
