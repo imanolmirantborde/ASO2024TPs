@@ -62,12 +62,6 @@ import Casino from "../ModalComponents/Casino";
 
             casino_stake: 500,
             
-            troll_info: false,
-
-            
-           
-            
-
           
            
         };
@@ -85,7 +79,7 @@ import Casino from "../ModalComponents/Casino";
         this.StartCasino = this.StartCasino.bind(this);
         this.CasinoWin = this.CasinoWin.bind(this);
         this.DefaultCasinoVal = this.DefaultCasinoVal.bind(this);
-        this.CloseTrollmsg = this.CloseTrollmsg.bind(this);
+        
 
        
         
@@ -385,7 +379,7 @@ import Casino from "../ModalComponents/Casino";
             {
                 this.setState((lastState) => {
                     return {
-                        troll_info: true, 
+                        
 
                         click: 0,
 
@@ -434,17 +428,7 @@ import Casino from "../ModalComponents/Casino";
         return Math.floor(Math.random() * (max - min)) + min;
       }
 
-      CloseTrollmsg()
-      {
-        this.setState(() => {
-            return {
-                
-                troll_info: false,
-                
-            }
-        })
 
-      }
 
     render() 
     {

@@ -19,8 +19,6 @@ function Custom(props)
         if(show)
         {
             custom.style.display = 'inherit';
-          
-    
         }
     
         else {
