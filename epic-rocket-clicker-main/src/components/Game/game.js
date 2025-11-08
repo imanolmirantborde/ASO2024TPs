@@ -118,13 +118,13 @@ import Casino from "../ModalComponents/Casino";
             if(z <= 33)
             {
                 this.ChangePoints(-winval);
-                /* WYGRANA */
+                
 
                 notify("You win. Your award: " + winval);
             }
             else {
                 notify("You lose... Try again :-D");
-                /*PRZEGRANA */
+               
             }
         }
 
@@ -133,13 +133,13 @@ import Casino from "../ModalComponents/Casino";
             if(z <= 20)
             {
                 this.ChangePoints(-winval);
-                /* WYGRANA */
+            
 
                 notify("You win. Your award: " + winval);
             }
             else {
                 notify("You lose... Try again :-D");
-                /*PRZEGRANA */
+               
             }
         }
 
@@ -148,15 +148,13 @@ import Casino from "../ModalComponents/Casino";
             if(z <= 10)
             {
                 this.ChangePoints(-winval);
-                
-                /* WYGRANA */
+
 
                 notify("You win. Your award: " + winval);
             }
             else {
                 notify("You lose... Try again :-D");
                
-                /*PRZEGRANA */
             }
         }
 
@@ -266,7 +264,7 @@ import Casino from "../ModalComponents/Casino";
 
             }
              else {
-              notify("⛽You can't buy more Stock....")
+              notify("You can't buy more Stock....")
             }
         }
 

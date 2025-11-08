@@ -12,7 +12,7 @@ function Casino(props)
     const [show, SetShow]  = useState(false);
 
 
-      /*multipliers */ 
+      
       const [mltp_1, setMltp_1] = useState('btn btn-outline-light btn-lg');
       const [mltp_2, setMltp_2] = useState('btn btn-outline-light btn-lg');
       const [mltp_3, setMltp_3] = useState('btn btn-outline-light btn-lg');
